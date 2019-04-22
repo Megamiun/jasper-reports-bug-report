@@ -10,9 +10,12 @@ import java.io.File
 fun main() {
     File("out").mkdir()
 
-    buildPDF(getItems(17)).write("firstPage")
-    buildPDF(getItems(18)).write("error")
-    buildPDF(getItems(19)).write("secondPage")
+    buildPDF(getItems(21)).write("firstPage")
+    buildPDF(getItems(22)).write("error1")
+    buildPDF(getItems(23)).write("error2")
+    buildPDF(getItems(24)).write("error3")
+    buildPDF(getItems(25)).write("error4")
+    buildPDF(getItems(26)).write("secondPage")
 }
 
 private fun ByteArray.write(value: String) {
